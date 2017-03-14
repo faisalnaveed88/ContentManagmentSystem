@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="CMS.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 80%;
+            height: 618px;
+        }
+        .auto-style2 {
+            width: 92px;
+            height: 56px;
+        }
+        .auto-style3 {
+            width: 92px;
+            height: 145px;
+        }
+        .auto-style4 {
+            height: 145px;
+            width: 816px;
+        }
+        .auto-style5 {
+            width: 92px;
+            height: 324px;
+        }
+        .auto-style6 {
+            height: 324px;
+            width: 816px;
+        }
+        .auto-style7 {
+            height: 56px;
+            width: 816px;
+        }
+    </style>
+    <script src="ckeditor/ckeditor.js"></script>
+    <script src="scripts/jquery-3.1.1.js"></script>
+    <script src="scripts/jquery-3.1.1.intellisense.js"></script>
+
+ 
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class="auto-style1">
+        <tr>
+            <td class="auto-style3"></td>
+            <td class="auto-style4">
+                
+
+                Main Page</td>
+        </tr>
+        <tr>
+            <td class="auto-style5">
+                <asp:Button ID="Button1" runat="server" Text="Button" />
+            </td>
+            <td class="auto-style6">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style2"></td>
+            <td class="auto-style7"></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
