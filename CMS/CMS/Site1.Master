@@ -40,18 +40,38 @@
     <script src="ckeditor/ckeditor.js"></script>
     <script src="scripts/jquery-3.1.1.js"></script>
     <script src="scripts/jquery-3.1.1.intellisense.js"></script>
+   
+     
+   <script>
 
- 
+                     function TextAreaData()
+                     {
+
+                         $(document).ready( function() {
+                        
+                             document.getElementById('<%=testField.ClientID %>').value = "sadfdf";
+                             alert("hello")
+                        
+                         })
+                   
+                    }
+
+
+   </script>
 
 </head>
 <body>
+   
+
+
+
     <form id="form1" runat="server">
     <table class="auto-style1">
         <tr>
             <td class="auto-style3"></td>
             <td class="auto-style4">
                 
-
+                <asp:HiddenField ID="testField" runat="server" />
                 Main Page</td>
         </tr>
         <tr>

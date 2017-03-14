@@ -5,18 +5,20 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace CMS
+namespace DataBaseContivityCheck
 {
-    public partial class WebForm2 : System.Web.UI.Page
+    public partial class testpage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
+      
+
+        protected void Button1_Click1(object sender, EventArgs e)
         {
-            string str = HiddenField1.Value;
+            string str = hiddenField.Value;
         }
     }
 }

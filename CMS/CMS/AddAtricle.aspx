@@ -29,9 +29,26 @@
         width: 178px;
     }
     </style>
+
+    <script>
+
+                     function TextAreaData()
+                     {
+
+                             document.getElementById('<%=hiddenField.ClientID %>').value = "sadfdf";
+                             alert("hello")
+                        
+                         
+                  
+                       }
+
+
+        </script>
+
 </asp:Content>
+  
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form id="form1" runat="server">
+    <form id="form1" >
     <table class="auto-style8">
         <tr>
             <td class="auto-style10">&nbsp;</td>
@@ -41,6 +58,7 @@
         <tr>
             <td class="auto-style10">&nbsp;</td>
             <td class="auto-style9">
+                
                 <textarea id="TextArea1" name="S1"></textarea></td>
             <script>
                 CKEDITOR.replace('TextArea1');
@@ -50,13 +68,19 @@
         <tr>
             <td class="auto-style10">&nbsp;</td>
             <td class="auto-style9">
-                <asp:Button ID="publishButton" runat="server" Text="Publish" />
+                <asp:Button ID="publishButton" runat="server" Text="Publish" OnClick="publishButton_Click" OnClientClick="javscript:TextAreaData()" />
+                <asp:Label ID="mylabel" runat="server" Text="Label"></asp:Label>
+                <asp:Button ID="Button2" runat="server" Text="Button" OnClick="Button2_Click"  OnClientClick="javascript:TextAreaData()" />
             </td>
             <td class="auto-style11">&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style10">&nbsp;</td>
-            <td class="auto-style9">&nbsp;</td>
+            <td class="auto-style9">
+             
+                <asp:HiddenField ID="hiddenField" runat="server" />
+             
+            </td>
             <td class="auto-style11">&nbsp;</td>
         </tr>
     </table>
